@@ -3,11 +3,11 @@ Redis 驱动
 
 驱动程序使用Redis存储队列数据。
 
-您需要添加 `yiisoft/yii2-redis` 扩展到你的应和中。
+您需要安装 `yiisoft/yii2-redis` 扩展。
 
 配置示例:
-
 ```php
+//假如您用的是basic版您需要在两个地方添加如下配置：config/console.php(注册为控制台命令（消费用）)和config/web.php（添加任务用）
 return [
     'bootstrap' => [
         'queue', // 把这个组件注册到控制台
